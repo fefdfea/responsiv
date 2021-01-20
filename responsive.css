@@ -1,0 +1,116 @@
+/* 탑 메뉴 */
+.contaner .top_menu{text-align: right;}
+.contaner .top_menu li{display: inline;}
+/* //탑 메뉴 */
+/* 헤더 타이틀 */
+header{width: 100%; height: 300px; background: url(responsiv/img/header_bg.jpg) repeat-x top center;}
+header .contaner .tit{text-align: center; margin-top: 60px;}
+header .contaner .tit h2{font-size: 24px;height: 40px; background: rgba(0,0,0,0.3); padding: 5px 30px; display: inline-block; color: #fff; background-color: #51b0dc;}
+header .contaner .tit a{font-size: 20px; background: rgba(0,0,0,0.3); display: inline-block; padding: 3px 10px; margin-top: -5px;color: #fff; background-color: #4a9abf}
+header .contaner .tit h2:hover{color: #dbdbdb;}
+header .contaner .tit a:hover{color: #dbdbdb;}
+/*// 헤더 타이틀 */
+/* 헤더 아이콘 */
+header .contaner .header_icon{text-align: center; margin-top: 20px;}
+header .contaner .header_icon li{display: inline-block; position: relative; margin-top: 20px; margin-right: 10px;}
+header .contaner .header_icon a{width: 60px; height: 60px; display: inline-block; font-size: 35px; background-color:#3192bf; border-radius: 50%;}
+header .contaner .header_icon a{text-align: center;}
+header .contaner .header_icon i{color: #fff;}
+/* 아이콘 박스 쉐도우 */
+header .contaner .header_icon a:hover{
+  box-shadow: inset 0 0 0 5px rgba(75,154,191,0.9),
+  inset 0 0 0 100px rgba(0,0,0,0.1);}
+/* //아이콘 박스 쉐도우 */
+/* 호버 텍스트 */
+header .contaner .header_icon span{position: absolute; top: -40px; left: 2px; background-color: #3192bf; padding: 2px 4px; font-size: 15px; opacity: 0;
+color: black;}
+header .contaner .header_icon .facebook{left: -2px;}
+header .contaner .header_icon .html5{left: 8px;}
+header .contaner .header_icon a:hover span{opacity: 1;top: -30px; transition: all 0.3s ease;}
+
+/* //호버 텍스트 */
+/* //헤더 아이콘 */
+
+/* 전체메뉴 */
+nav .contaner div h3 {padding-left: 20px; color: #38acd9; font-size: 20px;}
+nav .contaner{overflow: hidden;}
+nav .contaner > div{width: 40%; float: left; padding-top: 20px; box-sizing: border-box;}
+nav .contaner > div:last-child{width: 20%;}
+nav .contaner ol{overflow: hidden;  padding-left: 20px;}
+nav .contaner ol li{ float: left; width: 50%; position: relative;}
+nav .contaner div:last-child ol li{width: 100%;}
+nav .contaner ol li::before{ content: '';background-color:#25a2d0; border-radius: 50%; width: 3px; height: 3px; position: absolute; top: 9px; left:-7px;}
+
+/* 호버효과 */
+nav .contaner ol a{position: relative;}
+nav .contaner ol a::after{content: ''; width: 0px; height: 1px; transition: all 0.3s ease; position: absolute; left: 0px; bottom: 0px; background-color: black;
+display: inline-block;}
+nav .contaner ol li:hover a:after{width: 100%;}
+/*// 호버효과 */
+/* //전체메뉴 */
+
+/* 중간 제목 */
+.mid_tit{background-color: #eaf7fd; width: 100%; height: 70px; text-align: center;}
+.mid_tit .contaner{position: relative;}
+.mid_tit .contaner em{font-size: 35px; line-height: 70px; color: #77cff8;}
+.mid_tit .contaner a{position: absolute; right: 40px; top: 5px; width: 60px; height: 60px; background-color: #3192bf; border-radius: 50%;}
+.mid_tit .contaner a i {line-height: 60px; font-size: 30px; color: #fff;}
+.mid_tit .contaner a:hover{ box-shadow: 0 0 100px  rgba(0, 0, 0, 0.4) inset;}
+/* //중간 제목 */
+
+/* 레이아웃 */
+#section{}
+#section .contaner{position: relative;}
+#section .contaner .sections article{border-bottom: 1px solid black; padding: 15px;}
+#section .contaner .section{ overflow: hidden;}
+#section .contaner .section .left_section{width: 250px; float: left; border-left: 1px solid black;}
+#section .contaner .section .center_section{
+   margin: 0 250px;
+   min-height: 1300px;
+   border-left: 1px solid black;
+   border-right: 1px solid black;}
+#section .contaner .section .right_section{width: 250px; position: absolute; right: 0px; top: 0px; border-right: 1px solid black;}
+/* //레이아웃 */
+
+/* 레이아웃 스타일 */
+/* col1 */
+#section .contaner .sections h5{color: #2f7fa6; font-size: 20px;}
+#section .contaner .sections h5 span{font-size: 15px;}
+#section .contaner .left_section .col1 ul{margin-top: 20px;}
+#section .contaner .left_section .col1 ul li{border-bottom: 1px solid #dbdbdb;}
+#section .contaner .left_section .col1 a{font-size: 20px; text-transform: uppercase; color: black; padding: 10px; display: block; position: relative;}
+#section .contaner .left_section .col1 a:hover{background-color: #2482aee6;}
+#section .contaner .left_section .col1 a i{position: absolute; right: 0px; top: 15px;}
+/* //col1 */
+
+/* col2 */
+/* notice1 */
+.col2 .notice1{position: relative;}
+.col2 .notice1 ul li{text-overflow: ellipsis; white-space: nowrap; overflow: hidden; padding-left: 5px; position: relative;}
+.col2 .notice1 ul li::before{content: "";width: 3px; height: 3px; border-radius: 50%; background-color: #449ce2;  position: absolute; top: 8px; left: 0px;}
+.col2 .notice1 .more {position: absolute; right: 10px; top: 5px;}
+.col2 .notice1 .more i{padding-left: 6.8px;}
+/* //notice1 */
+/* notice2 */
+.col2 .notice2{position: relative;}
+.col2 .notice2 ul li{
+  position: relative;
+  overflow: hidden; text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:2;
+  padding-left: 8px;
+  padding-bottom: 2px;
+  max-height: 40px; /* ie */
+}
+.col2 .notice2 .more {position: absolute; right: 10px; top: 5px;}
+.col2 .notice2 .more i{padding-left: 6.8px;}
+/* //notice2 */
+/* //col2 */
+/* //레이아웃 스타일 */
+
+/* 반응형 작업 */
+@media (max-width: 1220px) {
+  .contaner{width: 100%;}
+}
+/* //반응형 작업 */
